@@ -1,0 +1,13 @@
+ 
+ 
+ cấu hình password cho client: 
+ python 3.11
+
+ .\mosquitto_passwd.exe -c [tên file lưu pass] [tên đăng nhập]
+ .\mosquitto_passwd.exe -c pwfile nhandev
+ lưu ý:
+ - phải tắt cờ allow_anonymous false
+ - đặt đường dẫn đến file vừa tạo password_file D:\workspaces\mosquitto\pwfile
+
+
+Get-Content D:/workspaces/mosquitto/mosquitto.log -Wait -Tail 1000
